@@ -1,0 +1,5 @@
+{
+  "name": "Smart Invoice Generator",
+  "description": "A modern, easy-to-use web application to generate professional invoices in minutes. Features real-time preview, logo uploads, and PDF export.",
+  "requestFramePermissions": []
+}
