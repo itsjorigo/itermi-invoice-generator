@@ -12,7 +12,6 @@ export interface BusinessInfo {
   address: string;
   phone: string;
   email: string;
-  logo: string | null;
   signatureName: string;
   signatureTitle: string;
 }
