@@ -12,7 +12,8 @@ const getDueDate = () => {
     return date.toISOString().split('T')[0];
 }
 
-const hardcodedLogo = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIiBmaWxsPSIjM2I4MmY2Ii8+PC9zdmc+';
+const hardcodedLogo = 'https://itermi.com/wp-content/uploads/2022/09/Itermi_main_logo.svg';
+
 
 const initialLineItem: LineItem = {
   id: crypto.randomUUID(),
@@ -25,19 +26,19 @@ const initialLineItem: LineItem = {
 
 const initialState: InvoiceData = {
   business: {
-    name: 'Your Company',
-    address: '123 Business St, City, State 12345',
-    phone: '(123) 456-7890',
-    email: 'contact@yourcompany.com',
+    name: '',
+    address: '',
+    phone: '',
+    email: '',
     logo: hardcodedLogo,
-    signatureName: 'Sujeewa Kariyakarawana',
-    signatureTitle: 'Principal Consultant',
+    signatureName: '',
+    signatureTitle: '',
   },
   client: {
-    name: 'Client Name',
-    address: '456 Client Ave, City, State 12345',
-    phone: '(987) 654-3210',
-    email: 'client@email.com',
+    name: '',
+    address: '',
+    phone: '',
+    email: '',
   },
   details: {
     number: 'INV-001',
@@ -45,16 +46,16 @@ const initialState: InvoiceData = {
     dueDate: getDueDate(),
   },
   dispatch: {
-    clientNameId: 'US Renal Care Inc',
-    customerOrder: '339038',
-    customerAccount: '65282',
-    releaseCode: 'N/A',
-    dispatchDate: '7/30/25 9:00',
-    dispatchType: 'Hot Hands',
-    pmName: 'Ioanna Tsioplakis',
+    clientNameId: '',
+    customerOrder: '',
+    customerAccount: '',
+    releaseCode: '',
+    dispatchDate: '',
+    dispatchType: '',
+    pmName: '',
   },
   lineItems: [initialLineItem],
-  notes: 'Additional notes and payment instructions.',
+  notes: '.',
 };
 
 export const useInvoice = () => {
